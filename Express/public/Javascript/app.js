@@ -109,7 +109,7 @@ app.post('/submit', (req, res)=> {
         data = data.replace('{{email}}', email);
         data = data.replace('{{phone_number}}', phone_number);
         data = data.replace('{{totalItems}}', totalItems);
-        data = data.replace('{{totalPrice}}', totalPrice);
+        data = data.replace('{{totalPrice}}', totalPrice.toFixed(2));
         data = data.replace('{{taxAmount}}', taxAmount.toFixed(2));
         data = data.replace('{{totalPriceTax}}', totalPriceTax.toFixed(2));
 
