@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <style>
+        ul{
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <nav class = "topnav">
+        <ul>
+            <li><a href = "index.html"> Home</a></li>
+            <li><a href = "bio.html"> About Owner</a></li>
+            <li><a href = "menu.html"> Events & Menus </a></li>
+            <li><a href = "order.html"> Order Now</a></li>
+            <li><a href = "contact.html"> Contact Us</a></li>
+        </ul>
+    </nav> <br> 
+    <div class="summary">
+        <h1>Order Summary</h1>
+        <p>First Name: <span id="first_name">{{first_name}}</span></p>
+        <p>Last Name: <span id="last_name">{{last_name}}</span></p>
+        <p>Email: <span id="email">{{email}}</span></p>
+        <p>Phone Number: <span id="phone_number">{{phone_number}}</span></p>
+        <p>Total number of items ordered: <span id="totalItems">{{totalItems}}</span></p>
+        <p>Total price of the items: $<span id="totalPrice">{{totalPrice}}</span></p>
+        <p>Tax(8.25%): $<span id="taxAmount">{{taxAmount}}</span></p>
+        <p>Total Price of your order: $<span id="totalPriceTax">{{totalPriceTax}}</span></p>
+    </div>
+    
+    
+    
+    <script src="../Javascript/script.js"></script>
+
+    <footer style="text-align:center; background-color:rgb(91, 171, 91);">
+        <p> Would you like to receive messages on our latest deals?</p>
+        <input type="radio" name = "r01" value = "yes" onClick=getUpdates()>Yes please!
+        <input type="radio" name = "r01" value = "no" onClick =message(this.value)> No thanks!
+        <p id = "p02"> <b> Follow the Patel Cafe on:  </b>
+            <img src="../Images/insta.jpg" style="width: 40px; height: 30px;" > 
+            <img src="../Images/tiktok.jpg" style="width: 40px; height: 30px;"> 
+        </p>
+        <p id = "p03">&copy; The Patel Food Court Co. All rights reserved. </p>
+    </footer> 
+    
+</body>
+</html>

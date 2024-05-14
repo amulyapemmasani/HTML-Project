@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <nav class = "topnav">
+        <ul>
+            <li><a href = "index.html"> Home</a></li>
+            <li><a href = "bio.html"> About Owner</a></li>
+            <li><a href = "menu.html"> Events & Menus </a></li>
+            <li><a href = "order.html"> Order Now</a></li>
+            <li><a href = "contact.html"> Contact Us</a></li>
+        </ul>
+    </nav> <br> 
+    <header>
+            <h1> Contact Us </h1> 
+    </header>
+    <h1 style = "text-align: center; color: #fff; font-family: fantasy; font-size: xx-large;"> How to get in touch with us</h1>
+    <p style = "text-align: center; color: #fff; font-family: fantasy; font-size:medium"> You can find us in Sugar Land, Houston, TX! </p>
+    <p style = "text-align: center; color: #fff; font-family: fantasy; font-size:medium"> Please fill out the information below to give us a review on how we did. We appreciate every response thank you!</p>
+
+    
+        <div class = "contact">
+            <div class="address">
+                <h3> Our Address: </h3>
+            <p> 14000 University Blvd, Sugar Land TX, 77479</p>
+            </div>
+            <div class="email">
+                <h3> Email:</h3>
+            <p> vpatel38@cougarnet.uh.edu</p>
+            </div>
+            <div class="phone">
+                <h3> Phone Number:</h3>
+                <p> 832-842-2900</p> 
+            </div>
+        </div>
+    <div class = "main"> 
+        <div class = "dine">
+            <h2 style = "font-weight: bolder; font-size:x-large"> Reserve a Table:</h2> 
+            <form>
+                <label>First Name: </label>  
+                <input type = "text" id="fname"> <br> <br>
+                <label>Last Name:</label> 
+                <input type = "text" id="lname"> <br> <br>
+                <label>Email: </label> 
+                <input type = "email" id="mail"> <br> <br>
+                <label>Phone Number: </label> 
+                <input type = "text" id = "number"> <br> <br>
+                <label>Number of People: </label> 
+                <input type = "text" id="people"> <br> <br>
+                <button class = "submit" type ="button" onClick = "onSubmitReservation()">Book a Table</button>
+            </form>
+        </div>
+        <div class = "review"> 
+            <h2 style = "font-weight: bolder; font-size:x-large"> Review Us:</h2> 
+            <form>
+                <label>First Name: </label> 
+                <input type = "text" id="first"> <br> <br>
+                <label>Last Name:</label> 
+                <input type = "text" id="last"> <br> <br>
+                <label>Email: </label> 
+                <input type = "email" id="email"> <br> <br>
+                <label>Phone Number: </label> 
+                <input type = "text" id = "num"> <br> <br>
+                <label>Have you tasted our cuisine?: </label> <br>
+                <input type = "radio" value = "Yes" name="click">Yes
+                <input type = "radio" value = "No" name="click"> No<br> <br>
+                <label> Please write a review on how we served. </label> <br>
+                <input type = "text" id = "review" style = "width:300px"> <br> <br>
+                <label> What can we do differntly to serve you better?</label> <br>
+                <input type = "text" id = "diff" style = "width:300px"> <br> <br>
+                <button class = "submit" type ="button" onClick = "onSubmitReview()"> Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="../Javascript/script.js"></script>
+    <footer style="text-align:center; background-color:rgb(91, 171, 91);">
+        <p> Would you like to receive messages on our latest deals?</p>
+            <input type="radio" name = "r01" value = "yes" onClick=getUpdates()>Yes please!
+            <input type="radio" name = "r01" value = "no" onClick =message(this.value)> No thanks!  
+            <p id = "p02"> <b> Follow the Patel Cafe on:  </b>
+                <img src="../Images/insta.jpg" style="width: 40px; height: 30px;" > 
+                <img src="../Images/tiktok.jpg" style="width: 40px; height: 30px;"> 
+            </p>
+            <p id = "p03">&copy; The Patel Food Court Co. All rights reserved. </p>
+    </footer> 
+    
+</body>
+</html>
